@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--Home page-->
+  <head>
+    <title>Hollow Knight - Home</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* gives the header text a border and puts it in the center */
+      header h1 {
+        border: 4px white solid;
+        margin-right: 525px;
+        margin-left: 525px;
+        margin-top: 161px;
+      }
+
+      /* makes the first and third image on the right beside the text */
+      #img1-3 {
+        float: right;
+      }
+
+      /* makes the second image on the left beside the text */
+      .img2 {
+        float: left;
+      }
+
+      /* gives articles space between each other so it's not cluttered */
+      article {
+        padding-bottom: 200px;
+        padding-top: 200px;
+      }
+
+      /* gives article paragraphs space from the images */
+      article p {
+        padding-right: 100px;
+        padding-left: 100px;
+      }
+
+      /* gives images space from the articles */
+      article img {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      /* makes it so the video takes up the whole space */
+      #video {
+        min-width: 100%;
+        min-height: 100%;
+        margin-bottom: -200px;
+      }
+      
+      /* makes it so the header image is on the video */
+      header img {
+        margin-top: -1000px;
+      }
+
+      /* makes it so the home hyperlink is underlined, so it's easier to tell where you are */
+      .nav-style {
+        text-decoration: underline;
+      }
+
+      /* gives images a transition that makes them a little bigger when hovered on */
+      img {
+        transition: width 0.5s, height 0.5s;
+      }
+
+      img:hover {
+        width: 45%;
+        height: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav>
+      <ul>
+        <li><a class="nav-style" href="index.html">Home</a></li>
+        <li><a href="page2.html">Where To Buy</a></li>
+        <li><a href="page3.html">About</a></li>
+        <li><a href="page4.html">DLCs</a></li>
+        <li><a href="page5.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header>
+      <!--Video of Hollow Knight gameplay-->
+      <video autoplay muted loop id="video">
+        <source src="Images/Hollow Knight Website Header.mp4" type="video/mp4">
+      </video>
+      <!--Image of Hollow Knight logo-->
+      <figure>
+        <img src="Images/hollow-knight-logo.png" alt="Hollow Knight Logo"/>
+      </figure>
+      <h1>Descend into the dark</h1>
+    </header>
+    <main>
+      <!--Articles-->
+      <article>
+        <h1>Explore Deep Into a Forgotten Kingdom</h1>
+        <p>
+          <img
+            src="Images/hollow-knight-img1.jpg"
+            width="40%"
+            height="40%"
+            id="img1-3"
+            alt="The Hollow Knight dashing through Crystal Peaks" />
+          Beneath the quiet, fading town of Dirtmouth lies a huge ancient
+          kingdom. Many explorers search this place for glory, riches or answers
+          to old secrets.
+          <p>You play as the mysterious knight, and you will explore the depths,
+            finding its mysteries and fighting its evils.</p>
+        </p>
+      </article>
+      <article>
+        <h1>Survive Using Your Reflexes and Skills</h1>
+        <p>
+          <img
+            src="Images/hollow-knight-img2.jpg"
+            width="40%"
+            height="40%"
+            class="img2"
+            alt="The Hollow Knight shadow-dashing into the Grimm Troupe's cloak" />
+          Hollow Knight is a 2D action-adventure game, and a challenging one at that.
+          You will explore strange, great interconnected areas, encounter many friends and foes
+          and fight all kinds of creatures to figure out an ancient mystery, 
+          all while becoming stronger and developing new abilities.
+        </p>
+      </article>
+      <article>
+        <h1>Evocative Hand-Drawn Art</h1>
+        <p>
+          <img
+            src="Images/hollow-knight-img3.jpg"
+            width="40%"
+            height="40%"
+            id="img1-3"
+            alt="The Hollow Knight dodging an attack from the paintmaster" />
+          The elegant, vivid 2D hand-drawn animation is what brings Hollow Knight to life. 
+          Every place you go is amazingly strange, unique and detailed, with all kinds of creatures to meet, 
+          some passive, some hostile. This is a world worth exploring, to take in the sights and find hidden wonders.
+        </p>
+      </article>
+      <article>
+        <h1>Watch The Trailer</h1>
+        <!--Video of trailer-->
+        <iframe
+          alt="Thumbnail of the Hollow Knight trailer with the Knight standing on a cliff"
+          width="1200"
+          height="700"
+          src="https://www.youtube.com/embed/Y2amTl5lBYM?si=CBJuPSK18HQW2yF6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </article>
+    </main>
+    <footer>
+      <p>© Copyright 2025 Team Cherry</p>
+    </footer>
+  </body>
+</html>

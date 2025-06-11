@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--About page-->
+  <head>
+    <title>Hollow Knight - About</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Makes it so the praise article and the press kit article are beside each other using grid */
+      .inline-article {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+      }
+      article {
+        margin: 100px;
+      }
+
+      /* Makes the unity article has a background image */
+      .unity-background {
+        background-image: url(https://images.squarespace-cdn.com/content/v1/606d159a953867291018f801/1619987722169-VV6ZASHHZNRBJW9X0PLK/Key_Art_02_layeredjpg.jpg?format=1500w);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px;
+        margin-right: -1px;
+        opacity: 0.5;
+      }
+      .unity-background p {
+        opacity: 1;
+        color: white;
+        margin-top: 220px;
+      }
+      .unity-background h1 {
+        opacity: 1;
+        color: white;
+        margin-top: 220px;
+        margin-left: 175px;
+        margin-right: 175px;
+        background-color: black;
+      }
+      .unity-background a {
+        color: white;
+        font-size: 32px;
+      }
+
+      /* used for the hyperlinks */
+      #button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      #button:hover {
+        background-color: darkgray;
+        text-decoration: none;
+      }
+
+      .nav-style {
+        text-decoration: underline;
+      }
+
+      #img {
+        margin-bottom: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      .img {
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+
+      button {
+        display: inline-block;
+        margin: 75px;
+        padding: 25px;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: darkgray;
+      }
+
+      .p-margin {
+        margin: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      /* gives the team cherry article a border and a background color of red */
+      .team-cherry {
+        background-color: rgb(200, 52, 52);
+        padding-bottom: 50px;
+        border: 2px white solid;
+      }
+
+      /* gives background images to the buttons */
+      .button1 {
+        background-image: url(Images/hollow-knight-img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button2 {
+        background-image: url(Images/hollow-knight-img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button3 {
+        background-image: url(Images/hollow-knight-img3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button4 {
+        background-image: url(Images/hollow-knight-img4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button5 {
+        background-image: url(Images/hollow-knight-img5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button6 {
+        background-image: url(Images/hollow-knight-img-6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button7 {
+        background-image: url(Images/hollow-knight-img-7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button8 {
+        background-image: url(Images/hollow-knight-img-8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button9 {
+        background-image: url(Images/hollow-knight-img-9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button10 {
+        background-image: url(Images/hollow-knight-img-10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button11 {
+        background-image: url(Images/hollow-knight-img-11.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button12 {
+        background-image: url(Images/hollow-knight-img-12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Where To Buy</a></li>
+        <li><a class="nav-style" href="page3.html">About</a></li>
+        <li><a href="page4.html">DLCs</a></li>
+        <li><a href="page5.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header>
+      <!--JavaScript that is used to change the image-->
+      <button
+        class="button1"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img1.jpg'"></button>
+      <button
+        class="button2"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img2.jpg'"></button>
+      <button
+        class="button3"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img3.jpg'"></button>
+      <button
+        class="button4"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img4.jpg'"></button>
+      <button
+        class="button5"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img5.jpg'"></button>
+      <button
+        class="button6"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-6.jpg'"></button>
+      <img
+        class="img"
+        id="image"
+        src="Images/hollow-knight-img1.jpg"
+        width="50%"
+        height="50%" />
+      <button
+        class="button7"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-7.jpg'"></button>
+      <button
+        class="button8"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-8.jpg'"></button>
+      <button
+        class="button9"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-9.jpg'"></button>
+      <button
+        class="button10"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-10.jpg'"></button>
+      <button
+        class="button11"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-11.jpg'"></button>
+      <button
+        class="button12"
+        onclick="document.getElementById('image').src='Images/hollow-knight-img-12.jpg'"></button>
+    </header>
+    <main>
+      <div class="inline-article">
+        <article>
+          <h1>Praise for Hollow Knight</h1>
+          <p>
+            "It's a deep dive into a dark place, and a brilliantly rich
+            experience." - 9/10 Game Informer
+          </p>
+          <p>
+            "Truly a masterpiece of gaming if there ever was one, and certainly
+            art worthy of being in a museum." - 10/10 Destructoid
+          </p>
+          <p>
+            "Best platformer 2017 - The joy of Hollow Knight is the joy of
+            discovery, always hard-earned, never handed to you." - 92/100 PC
+            gamer
+          </p>
+        </article>
+        <article>
+          <h2>
+            If you'd like to write about Hollow Knight, we've got a press kit
+            full of videos, facts and images.
+          </h2>
+          <img
+            id="img"
+            src="Images/Grimm_troupe_screen.png"
+            width="80%"
+            height="60%"
+            alt="The Hollow Knight with the Grimm Troupe" />
+          <br />
+          <a
+            id="button"
+            href="https://drive.google.com/drive/folders/1SPCRaalJJepKYOQ4fdxZEzqNukJiUQCo"
+            >Press kit</a
+          >
+        </article>
+      </div>
+      <article class="unity-background">
+        <h1>Made with Unity</h1>
+        <p>
+          Learn about how Hollow Knight was made with this game engine, and all
+          the methods and tricks that were used.
+        </p>
+        <a id="button" href="https://unity.com/made-with-unity/hollow-knight"
+          >View</a
+        >
+      </article>
+      <article class="team-cherry">
+        <figure>
+          <img
+            src="Images/team-cherry.png"
+            width="30%"
+            height="30%"
+            alt="Team Cherry Logo" />
+        </figure>
+        <p class="p-margin">
+          Hollow Knight was made by Team Cherry in Adelaide, South Australia. A
+          team of three people: Ari Gibson, William Pellen, and David Kazi are
+          all responsible for putting together the game, making the trailers,
+          answering questions, posting game updates and so much more. The
+          support from fans of their game is what motivates them to continue. To
+          learn more, you can go to their socials by clicking the buttons below.
+        </p>
+        <br />
+        <a id="button" href="http://twitter.com/TeamCherryGames">Twitter </a>
+        <a id="button" href="https://www.teamcherry.com.au/"
+          >Team Cherry Site</a
+        >
+        <a
+          id="button"
+          href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA"
+          >Youtube</a
+        >
+        <a id="button" href="https://www.facebook.com/teamcherrygames/"
+          >Facebook</a
+        >
+      </article>
+    </main>
+    <footer>
+      <p>© Copyright 2025 Team Cherry</p>
+    </footer>
+  </body>
+</html>

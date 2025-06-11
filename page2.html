@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--Where To Buy page-->
+  <head>
+    <title>Hollow Knight - Where To Buy</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .soundtrack-img {
+        float: right;
+      }
+
+      /* Puts all the hyperlinks of where you can buy the game in a grid */
+      #buy-game-img {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+      }
+      /* Adds a white border on any hyperlink hovered on */
+      #buy-game-img a:hover {
+        border: 2px solid white;
+      }
+      article {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      article p {
+        padding-right: 100px;
+        padding-left: 100px;
+      }
+      article img {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      h1 {
+        margin-bottom: 100px;
+      }
+      footer {
+        margin-top: 100px;
+      }
+
+      /* Makes the hyperlink look like a button so it looks good */
+      #button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      /* Makes button dark gray when hovered on */
+      #button:hover {
+        background-color: darkgray;
+        text-decoration: none;
+      }
+
+      .nav-style {
+        text-decoration: underline;
+      }
+
+      header {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="nav-style" href="page2.html">Where To Buy</a></li>
+        <li><a href="page3.html">About</a></li>
+        <li><a href="page4.html">DLCs</a></li>
+        <li><a href="page5.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>
+        Hollow Knight can be played on PC, PS4, Nintendo Switch, Xbox Game Pass,
+        and can be bought from a lot of websites.
+      </h1>
+      <p>The links below are where you can buy the game.</p>
+    </header>
+    <main>
+      <!--all hyperlinks of where you can buy Hollow Knight-->
+      <article id="buy-game-img">
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/"
+          ><img src="Images/steam.png" alt="Steam"
+        /></a>
+        <a href="https://www.gog.com/en/game/hollow_knight"
+          ><img src="Images/gogcom.png" alt="Gog.com"
+        /></a>
+        <a href="https://www.humblebundle.com/store/hollow-knight"
+          ><img src="Images/humble-store.png" alt="Humble Store"
+        /></a>
+        <a href="https://www.nintendo.com/games/detail/hollow-knight-switch"
+          ><img src="Images/nintendo-switch.png" alt="Nintendo Eshop"
+        /></a>
+        <a
+          href="https://www.xbox.com/en-us/games/store/hollow-knight-voidheart-edition/9mw9469v91lm"
+          ><img
+            src="Images/xbox-game-pass.png"
+            width="75%"
+            height="75%"
+            alt="Xbox Game Pass"
+        /></a>
+        <a
+          href="https://store.playstation.com/en-us/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US"
+          ><img src="Images/ps4.png" alt="PS4"
+        /></a>
+      </article>
+      <!--Article where you can buy Hollow Knight Soundtrack-->
+      <article>
+        <h1>
+          <img
+            src="Images/soundtrack.jpg"
+            class="soundtrack-img"
+            alt="A picture of the two Hollow Knight soundtracks" />A haunting,
+          orchestral score...
+        </h1>
+        <p>
+          Hollow Knight's epic soundtrack is played throughout the game, showing
+          the true impact of a developed civilization in ruins. It was composed
+          and produced by Christopher Larkin.
+        </p>
+        <a
+          id="button"
+          href="https://christopherlarkin.bandcamp.com/album/hollow-knight-original-soundtrack"
+          >Buy Soundtrack</a
+        >
+      </article>
+    </main>
+    <footer>
+      <p>© Copyright 2025 Team Cherry</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/* Stylesheet */
+
+/* Increases size of nav bar and gives it background image */
+nav {
+  list-style: none;
+  background-image: url(https://assets.rockpapershotgun.com/images/15/sep/hk10a.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 1000%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Makes nav hyperlinks inline */
+nav li {
+  display: inline;
+}
+
+/* Increases size of nav hyperlinks and gives it space */
+nav a {
+  font-size: 32px;
+  margin: 83px;
+}
+
+/* Makes paragraphs bigger and more spaced out */
+p {
+  font-size: 20px;
+  color: white;
+  line-height: 140%;
+}
+
+/* Does the same with headers */
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+/* Makes the background color of the whole website black, and aligns everything into the center */
+body {
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, serif;
+}
+
+footer {
+  font-weight: bold;
+}
+
+/* Makes nav hyperlinks turn white and underlined when hovered on */
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Animation where all content fades */
+main {
+  animation-name: main-animation;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes main-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  animation-name: header-animation;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes header-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

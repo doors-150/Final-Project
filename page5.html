@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--Contact us page-->
+  <head>
+    <title>Hollow Knight - Contact Us</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .nav-style {
+        text-decoration: underline;
+      }
+
+      /* Makes the label look better by increasing its size and giving it space */
+      label {
+        color: white;
+        font-size: 20px;
+        margin-left: 201px;
+      }
+
+      /* Makes the input look better by increasing its size and spacing it away from everything */
+      input {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 135px;
+        font-size: 20px;
+      }
+
+      textarea {
+        font-size: 20px;
+      }
+
+      .button:hover {
+        background-color: gray;
+      }
+
+      /* Makes the button look nicer by giving it space and increasing its size */
+      .button {
+        margin: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Where To Buy</a></li>
+        <li><a href="page3.html">About</a></li>
+        <li><a href="page4.html">DLCs</a></li>
+        <li><a class="nav-style" href="page5.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Contact us</h1>
+    </header>
+    <main>
+      <!--Form-->
+      <form method="get" name="contact-us">
+        <!--Email Input-->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email-input"
+          placeholder="someone@example.com"
+          required />
+
+        <!--Phone Number Input-->
+        <label for="phone-number">(Optional) Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number-input" />
+
+        <!--Subject Input-->
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject-input"
+          placeholder="Why are you contacting us?"
+          required />
+
+        <!--Message Input-->
+        <textarea
+          id="message"
+          name="message-input"
+          rows="6"
+          cols="100"
+          placeholder="Describe what you want to talk about"></textarea>
+
+        <br />
+        <!--Submit button-->
+        <input type="submit" value="Submit" class="button" />
+      </form>
+    </main>
+    <footer>
+      <p>© Copyright 2025 Team Cherry</p>
+    </footer>
+  </body>
+</html>
